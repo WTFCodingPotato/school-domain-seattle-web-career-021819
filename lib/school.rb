@@ -19,7 +19,9 @@ class School
   end
   
   def sort
-    @roster.map
+    @roster.map do |key, roster|
+      roster.sort!
+    end
     @roster.sort.to_h
   end
 end

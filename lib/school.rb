@@ -19,6 +19,7 @@ class School
   end
   
   def sort
+    @roster.map
     @roster.sort.to_h
   end
 end
